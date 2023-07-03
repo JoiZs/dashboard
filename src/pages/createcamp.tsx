@@ -6,17 +6,17 @@ type Props = {};
 
 const Createcamp = (props: Props) => {
   return (
-    <div className="grid grid-rows-4">
-      <div className="row-span-2">
+    <div className="flex flex-col">
+      <div>
         <CreateDetailSec />
       </div>
-      <div className="row-span-1 border-y py-4">
+      <div className="border-y py-4">
         <CreatePrizeSec />
       </div>
-      <div className="row-span-1">
+      <div>
         <CreateLimitSec />
       </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <button className="btn btn-lg btn-neutral">Submit</button>
       </div>
     </div>

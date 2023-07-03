@@ -5,7 +5,7 @@ type Props = {};
 const Viewcamp = (props: Props) => {
   return (
     <div className="grid grid-rows-4 h-full">
-      <div className="row-span-1 flex flex-row gap-2 items-center justify-between">
+      <div className="row-span-1 flex flex-row flex-wrap gap-2 items-center justify-between">
         <div className="flex flex-row gap-2">
           <button className="btn">Create Campaign</button>
           <button className="btn">Sort filter applied</button>

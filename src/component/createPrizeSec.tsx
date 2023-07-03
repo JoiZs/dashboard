@@ -6,7 +6,7 @@ const CreatePrizeSec = (props: Props) => {
   return (
     <Fragment>
       <h1 className="capitalize text-2xl">Real Time Campaign</h1>
-      <div className="flex flex-row">
+      <div className="flex flex-row flex-wrap">
         <label className="label cursor-pointer label-text max-w-4xl w-full gap-2 flex flex-col justify-start items-start p-10">
           <h2 className=" text-gray-500 text-xl font-normal">Select Prize</h2>
           <div className="max-w-xs w-full">
@@ -37,7 +37,7 @@ const CreatePrizeSec = (props: Props) => {
             <input type="text" className="input input-md input-bordered" />
           </div>
           <div className="max-w-xs w-full">
-            <h2 className="p-2 text-gray-500 text-xl font-normal">
+            <h2 className="p-2 text-gray-500 text-xl font-normal ">
               Real Time Campaign - Select denominations
             </h2>
             <label className="flex flex-row label label-text justify-start gap-2">

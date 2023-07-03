@@ -10,20 +10,24 @@ import Pendings from "../pages/pendings";
 import Closed from "../pages/closed";
 import Dashboards from "../pages/dashboards";
 import Campbyid from "../pages/campbyid";
+import Mobilenav from "../component/mobilenav";
 
 type Props = {};
 
 const Dashboard = (props: Props) => {
   return (
     <div className="grid grid-rows-9 h-full">
-      <div className="row-span-1 p-2 flex items-center">
+      <div className="row-span-1 p-2 max-md:hidden flex items-center">
         <Topnav />
       </div>
+      <div className="row-span-1 p-2 md:hidden items-center">
+        <Mobilenav />
+      </div>
       <div className="grid row-start-2 row-end-[10] grid-cols-5 grid-flow-col h-full">
-        <div className="col-span-1 h-full p-2">
+        <div className="max-md:hidden grid col-span-1 h-full p-2">
           <Sidenav />
         </div>
-        <div className="col-span-4 p-2">
+        <div className="col-span-5 md:col-span-4 p-2">
           <Routes>
             <Route path="/" Component={() => <Landing />} />
             <Route
