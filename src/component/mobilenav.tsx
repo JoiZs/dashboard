@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
-type Props = {};
+type Props = {
+  setSideToggleHandler: () => void;
+};
 
 const Mobilenav = (props: Props) => {
   return (
@@ -91,6 +93,11 @@ const Mobilenav = (props: Props) => {
             </li>
           </ul>
         </div> */}
+
+        <i
+          onClick={props.setSideToggleHandler}
+          className="glyphicon glyphicon-menu-hamburger p-2 btn btn-square btn-link no-underline hover:no-underline text-xl"
+        />
       </div>
       <div className="navbar-center">
         <Link

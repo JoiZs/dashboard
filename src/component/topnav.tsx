@@ -1,6 +1,8 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  setSideToggleHandler: () => void;
+};
 
 const Topnav = (props: Props) => {
   return (
@@ -10,7 +12,12 @@ const Topnav = (props: Props) => {
         <span>Shoprite</span>
       </div>
       <div className="grid col-span-5">
-        <form className="flex flex-row col-span-3">
+        <form className="flex flex-row col-span-3 items-center">
+          <i
+            onClick={props.setSideToggleHandler}
+            className="glyphicon glyphicon-menu-hamburger p-2 btn btn-square btn-link no-underline hover:no-underline text-xl"
+          />
+
           <input
             placeholder={`Search Campaign name, mobile number or Hybris ID`}
             type="text"
