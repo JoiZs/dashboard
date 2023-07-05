@@ -112,7 +112,10 @@ const Mobilenav = (props: Props) => {
       </div>
       <div className="navbar-end">
         <div className="dropdown dropdown-end">
-          <button title="Navbarenddd" className="btn btn-ghost btn-circle ">
+          <button
+            title="Navbarenddd"
+            className="btn btn-ghost btn-circle btn-primary text-primary"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -137,9 +140,12 @@ const Mobilenav = (props: Props) => {
             />
           </div>
         </div>
-        <button title="Navbarenddd" className="btn btn-ghost btn-circle">
+        <button
+          title="Navbarenddd"
+          className="btn btn-ghost btn-circle btn-primary"
+        >
           <div className="indicator">
-            <i className="glyphicon glyphicon-off px-1" />
+            <i className="glyphicon glyphicon-off px-1 text-primary" />
             <span className="badge badge-xs badge-primary indicator-item"></span>
           </div>
         </button>

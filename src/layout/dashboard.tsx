@@ -32,15 +32,15 @@ const Dashboard = (props: Props) => {
       <div className="row-span-1 p-2 md:hidden items-center">
         <Mobilenav setSideToggleHandler={SideToggleHandler} />
       </div>
-      <div className="flex row-start-2 row-end-[10] grid-cols-5 grid-flow-col h-full">
+      <div className="flex row-start-2 row-end-[10] grid-cols-5 grid-flow-col h-full ">
         <motion.div
           initial={false}
           animate={sideToggle ? "open" : "closed"}
-          className="grid col-span-1 h-full p-2"
+          className="grid col-span-1 h-full bg-gray-100"
         >
           <Sidenav />
         </motion.div>
-        <div className="col-span-5 md:col-span-4 p-2 font-body flex-1">
+        <div className="col-span-5 md:col-span-4 p-2 md:p-4 font-body flex-1 bg-gray-100 rounded-tl-3xl">
           <Routes>
             <Route path="/" Component={() => <Landing />} />
             <Route

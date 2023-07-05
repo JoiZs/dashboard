@@ -16,13 +16,15 @@ const Sidenav = (props: Props) => {
           width: "6rem",
         },
       }}
-      className="menu menu-lg gap-2 h-full w-full bg-white font-display ease-in-out"
+      className="menu menu-lg gap-4 h-full w-full bg-white font-display ease-in-out py-12"
     >
       <motion.li className="max-h-12 h-full">
         <Link
           to={"viewcampaigns"}
-          className={`text-xl  hover:no-underline hover:text-blue-shop rounded-full border-2 border-white ${
-            pathname === "/viewcampaigns" && "text-blue-shop border-base-200"
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2  ${
+            pathname === "/viewcampaigns"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bxs-dashboard" />
@@ -46,8 +48,10 @@ const Sidenav = (props: Props) => {
       <motion.li className="max-h-12 h-full">
         <Link
           to={"createcampaign"}
-          className={`text-xl hover:no-underline  hover:text-blue-shop rounded-full border-2 border-white  ${
-            pathname === "/createcampaign" && "text-blue-shop border-base-200 "
+          className={`text-xl hover:no-underline  hover:text-blue-shop rounded-full border-2   ${
+            pathname === "/createcampaign"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bxs-wrench" />
@@ -71,8 +75,10 @@ const Sidenav = (props: Props) => {
       <motion.li className="max-h-12 h-full">
         <Link
           to={"shortcodes"}
-          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
-            pathname === "/shortcodes" && "text-blue-shop border-base-200 "
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2   ${
+            pathname === "/shortcodes"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bxs-doughnut-chart" />
@@ -96,8 +102,10 @@ const Sidenav = (props: Props) => {
       <motion.li className="max-h-12 h-full">
         <Link
           to={"pending"}
-          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
-            pathname === "/pending" && "text-blue-shop border-base-200 "
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2   ${
+            pathname === "/pending"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bxs-message-dots" />
@@ -121,8 +129,10 @@ const Sidenav = (props: Props) => {
       <motion.li className="max-h-12 h-full">
         <Link
           to={"closed"}
-          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
-            pathname === "/closed" && "text-blue-shop border-base-200 "
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2   ${
+            pathname === "/closed"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bx-window-close"></i>
@@ -146,8 +156,10 @@ const Sidenav = (props: Props) => {
       <motion.li className="max-h-12 h-full">
         <Link
           to={"dashboards"}
-          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
-            pathname === "/dashboards" && "text-blue-shop border-base-200 "
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2   ${
+            pathname === "/dashboards"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bxs-cog"></i>
@@ -171,8 +183,10 @@ const Sidenav = (props: Props) => {
       <motion.li className="max-h-12 h-full">
         <Link
           to={"/usermanagement"}
-          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
-            pathname === "/usermanagement" && "text-blue-shop border-base-200 "
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2   ${
+            pathname === "/usermanagement"
+              ? "border-gray-100 text-blue-shop"
+              : " border-white"
           }`}
         >
           <i className="bx text-xl bx-user"></i>

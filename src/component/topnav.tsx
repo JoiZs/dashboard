@@ -31,7 +31,7 @@ const Topnav = (props: Props) => {
           </button>
         </form>
         <div className="col-start-5 col-end-6 flex justify-end">
-          <button className="btn btn-lg rounded-full">
+          <button className="btn btn-lg rounded-full btn-primary">
             <i className="glyphicon glyphicon-off px-1" />
             Logout
           </button>
