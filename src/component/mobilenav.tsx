@@ -1,14 +1,12 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
 const Mobilenav = (props: Props) => {
-  const { pathname } = useLocation();
-
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,12 +79,28 @@ const Mobilenav = (props: Props) => {
                 Dashboards
               </Link>
             </li>
+            <li>
+              <Link
+                to={"usermanagement"}
+                className={`text-xl ${
+                  pathname === "/usermanagement" && "active"
+                }`}
+              >
+                User Management
+              </Link>
+            </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="navbar-center">
-        <Link to={"/"} className="btn btn-ghost normal-case text-xl">
-          Logo
+        <Link
+          to={"/"}
+          className="btn btn-link no-underline hover:no-underline normal-case text-xl"
+        >
+          <div className="text-3xl text-blue-shop flex items-center">
+            <i className="bx bxs-smile " />
+            <span>Shoprite</span>
+          </div>
         </Link>
       </div>
       <div className="navbar-end">

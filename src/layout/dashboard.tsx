@@ -11,6 +11,7 @@ import Closed from "../pages/closed";
 import Dashboards from "../pages/dashboards";
 import Campbyid from "../pages/campbyid";
 import Mobilenav from "../component/mobilenav";
+import Usermanagement from "../pages/usermanagement";
 
 type Props = {};
 
@@ -23,11 +24,11 @@ const Dashboard = (props: Props) => {
       <div className="row-span-1 p-2 md:hidden items-center">
         <Mobilenav />
       </div>
-      <div className="grid row-start-2 row-end-[10] grid-cols-5 grid-flow-col h-full">
-        <div className="max-md:hidden grid col-span-1 h-full p-2">
+      <div className="flex row-start-2 row-end-[10] grid-cols-5 grid-flow-col h-full">
+        <div className="grid col-span-1 h-full p-2">
           <Sidenav />
         </div>
-        <div className="col-span-5 md:col-span-4 p-2">
+        <div className="col-span-5 md:col-span-4 p-2 font-body flex-1">
           <Routes>
             <Route path="/" Component={() => <Landing />} />
             <Route
@@ -84,6 +85,14 @@ const Dashboard = (props: Props) => {
               Component={() => (
                 <EachSite title="dashboards">
                   <Dashboards />
+                </EachSite>
+              )}
+            />
+            <Route
+              path="usermanagement"
+              Component={() => (
+                <EachSite title="usermanagement">
+                  <Usermanagement />
                 </EachSite>
               )}
             />

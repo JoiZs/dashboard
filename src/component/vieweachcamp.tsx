@@ -5,9 +5,9 @@ type Props = {};
 
 const Vieweachcamp = (props: Props) => {
   return (
-    <div className="max-w-xl m-auto w-full md:max-w-full">
+    <div className="max-w-md m-auto w-full md:max-w-full">
       <div className="overflow-x-auto">
-        <table className="table table-xs">
+        <table className="table table-lg">
           <thead>
             <tr>
               <th>Brand</th>

@@ -6,53 +6,82 @@ const Sidenav = (props: Props) => {
   const { pathname } = useLocation();
 
   return (
-    <ul className="menu menu-md gap-2 bg-base-200 rounded-box h-full w-full">
+    <ul className="menu menu-lg gap-2 h-full w-full bg-white font-display">
       <li>
         <Link
           to={"viewcampaigns"}
-          className={`text-xl ${pathname === "/viewcampaigns" && "active"}`}
+          className={`text-xl  hover:no-underline hover:text-blue-shop rounded-full border-2 border-white ${
+            pathname === "/viewcampaigns" && "text-blue-shop border-base-200"
+          }`}
         >
-          View Campaigns
+          <i className="bx bxs-dashboard" />
+          <span className="max-md:hidden">View Campaigns</span>
         </Link>
       </li>
       <li>
         <Link
           to={"createcampaign"}
-          className={`text-xl ${pathname === "/createcampaign" && "active"}`}
+          className={`text-xl hover:no-underline  hover:text-blue-shop rounded-full border-2 border-white  ${
+            pathname === "/createcampaign" && "text-blue-shop border-base-200 "
+          }`}
         >
-          Create Campaign
+          <i className="bx bxs-wrench" />
+          <span className="max-md:hidden">Create Campaign</span>
         </Link>
       </li>
       <li>
         <Link
           to={"shortcodes"}
-          className={`text-xl ${pathname === "/shortcodes" && "active"}`}
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
+            pathname === "/shortcodes" && "text-blue-shop border-base-200 "
+          }`}
         >
-          Shortcodes
+          <i className="bx bxs-doughnut-chart" />
+          <span className="max-md:hidden">Shortcodes</span>
         </Link>
       </li>
       <li>
         <Link
           to={"pending"}
-          className={`text-xl ${pathname === "/pending" && "active"}`}
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
+            pathname === "/pending" && "text-blue-shop border-base-200 "
+          }`}
         >
-          Pending
+          <i className="bx bxs-message-dots" />
+          <span className="max-md:hidden">Pending</span>
         </Link>
       </li>
       <li>
         <Link
           to={"closed"}
-          className={`text-xl ${pathname === "/closed" && "active"}`}
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
+            pathname === "/closed" && "text-blue-shop border-base-200 "
+          }`}
         >
-          Closed
+          <i className="bx bx-window-close"></i>
+          <span className="max-md:hidden">Closed</span>
         </Link>
       </li>
       <li>
         <Link
           to={"dashboards"}
-          className={`text-xl ${pathname === "/dashboards" && "active"}`}
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
+            pathname === "/dashboards" && "text-blue-shop border-base-200 "
+          }`}
         >
-          Dashboards
+          <i className="bx bxs-cog"></i>
+          <span className="max-md:hidden">Dashboard</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          to={"/usermanagement"}
+          className={`text-xl hover:no-underline hover:text-blue-shop rounded-full border-2 border-white  ${
+            pathname === "/usermanagement" && "text-blue-shop border-base-200 "
+          }`}
+        >
+          <i className="bx bx-user"></i>
+          <span className="max-md:hidden">User Management</span>
         </Link>
       </li>
     </ul>
